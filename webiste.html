@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Business Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+  margin-left: 20px;
+}
+
+nav {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: #007bff;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.bg-light {
+  background: #f4f4f4;
+}
+
+.services-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services-list li {
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 600px;
+}
+
+form button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1, nav {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  nav ul {
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+</style>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Your Business Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Your Business</h2>
+      <p>We help you achieve great things. Professional. Reliable. Trusted.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        We are a professional business offering top-quality services to our clients. Our mission is to deliver value and exceed expectations.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>✔️ Service One</li>
+        <li>✔️ Service Two</li>
+        <li>✔️ Service Three</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
